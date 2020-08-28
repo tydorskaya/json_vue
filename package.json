@@ -1,0 +1,43 @@
+{
+  "name": "test_json",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "buildVue": "webpack --watch --config webpack.config.js",
+    "style": "node-sass --output-style compressed -o public public/scss/style.scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tydorskaya/json_vue"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "vue": "^2.6.11",
+    "@babel/polyfill": "^7.7.0",
+    "lodash": "^4.17.15"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "nodemon": "^1.18.6",
+    "webpack-cli": "^3.3.12",
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.7.6",
+    "@vue/test-utils": "^1.0.0-beta.30",
+    "babel-jest": "^24.9.0",
+    "babel-loader": "^8.0.6",
+    "jest": "^24.9.0",
+    "vue-jest": "^3.0.5",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.41.2"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest"
+    }
+  }
+}

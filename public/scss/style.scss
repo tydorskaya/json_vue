@@ -1,0 +1,64 @@
+/*Clear*/
+html,body,
+div,dl,dt,dd,ul,ol,li,form,table,tr,td,
+h1,h2,h3,h4,h5,h6,pre,p,span,b,i,a,
+input,textarea,fieldset { margin: 0; padding: 0; outline: none;}
+input,textarea,div {box-sizing: border-box;}
+
+:focus {outline: 0; }
+
+ul { list-style-type: none; }
+img, fieldset  { border: none; }
+table { border-collapse: collapse; border-spacing: 0; }
+
+input[type="submit"] { cursor: pointer;}
+
+[v-cloak] {
+  display: none;
+}
+
+body{
+  background: #edf2f7;
+}
+
+#app{
+  padding: 20px 40px;
+  
+  .container{
+    background: #fff;
+    border-radius: 5px;
+    .themed-grid-col-head{
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    .themed-grid-col-body{
+      padding-top: 2px;
+      padding-bottom: 2px;
+    }
+  }
+}
+
+.navbar{
+  color: #fff;
+}
+
+.soc_block{
+  display: flex;
+  margin-top: 10px;
+  a, img{
+    width: 25px;
+    height: 25px;
+    display: block;
+  }
+  a{
+    margin-right: 15px;
+  }
+}
+
+.navbar-brand{
+  width: 100px;
+  >img{
+    width: 100%;
+  }
+}
+
